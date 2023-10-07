@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh; 
+    position: relative;
+}
+
+.pizzalogo{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+img{
+    height:675px;
+    width: 1519px;
+    
+}
+.navo{
+    width:100%;
+    height:70px;
+    padding: 0px 70px;
+    background-color: rgb(240, 244, 249);
+    text-decoration-color: pink;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 5px grey;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.logo span{
+    color: black;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(252, 3, 57);
+    padding: 10px 20px;
+}
+
+.menu a:last-child{
+    background-color: brown;
+    color: white;
+    border-radius:8vw;
+    .menu i{
+        dispaly:block;
+        font-size: 6vw;
+    }
+}
+
+.h-text{
+    position: absolute;
+    top:30%;
+    left:5%;
+    padding: 15px;
+}
+
+.h-text p{
+    color: rgb(191, 20, 92);
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+.h-text h1{
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.h-text h1 span{
+    color: black;
+}
+
+.h-text h2{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#order{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color:brown;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#dis{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color:rgb(41, 39, 39);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#fre{
+    color:rgb(10, 13, 162);
+    font-size: 2em;
+}
+
+#football{
+    position: absolute;
+    bottom:15%;
+    left:5%;
+}
