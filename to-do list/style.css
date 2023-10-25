@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: antiquewhite;
+    padding:10px;
+}
+
+.todo{
+    width:100%;
+    max-width: 540px;
+    background: #fff;
+    margin:100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius:10px;
+}
+
+.todo h2{
+    color:black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.to do h2 img{
+    width:10pxs;
+    margin-left:10px;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(222, 217, 217);
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background: transparent;
+    padding:10px;
+}
+
+button{
+    border:none;
+    outline:none;
+    padding: 15px 50px;
+    background:rgb(173, 90, 7);
+    color:white;
+    font-size:15px;
+    border-radius:30px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style:none;
+    font-size:15px;
+    padding:10px 8px 10px 40px;
+    user-select:none;
+    cursor: pointer;
+    position:relative;
+}
+
+ul li::before{
+    content: '';
+    position:absolute;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-image:url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left:10px;
+}
+
+ul li.checked{
+    color:#555;
+   text-decoration: line-through; 
+}
+
+ul li.checked::before{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/61/Black_Circle.jpg);
+}
+
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(231, 223, 223);
+}
+
+ul li span:hover{
+    background:rgb(194, 9, 9);
+}
